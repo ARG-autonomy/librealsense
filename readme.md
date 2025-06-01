@@ -1,4 +1,4 @@
-# ARG
+# ARG Notes
 
 Use tag `2.53.1`
 
@@ -21,6 +21,12 @@ cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=release
 sudo make -j6
 sudo make install
 ```
+
+Then realsense-ros
+
+---
+
+# Readme
 
 <p align="center"><img src="doc/img/realsense.png" width="70%" /><br><br></p>
 
