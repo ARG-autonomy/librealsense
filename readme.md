@@ -1,3 +1,24 @@
+# ARG
+
+Use tag `2.53.1`
+
+[[NVIDIA Jetson installation (cuda is optional)]](https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation)
+
+```bash
+sudo apt-get install git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev -y
+./scripts/setup_udev_rules.sh  
+mkdir build && cd build  
+cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=release -DFORCE_RSUSB_BACKEND=false -DBUILD_WITH_CUDA=true && make -j$(($(nproc)-1)) && sudo make install
+```
+
+On Xavier:
+
+```bash
+cmake .. -DBUILD_EXAMPLES=true -DCMAKE_BUILD_TYPE=release
+sudo make -j6
+sudo make install
+```
+
 <p align="center"><img src="doc/img/realsense.png" width="70%" /><br><br></p>
 
 -----------------
