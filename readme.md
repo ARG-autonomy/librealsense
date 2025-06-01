@@ -5,7 +5,7 @@ Use tag `2.53.1`
 [[NVIDIA Jetson installation (cuda is optional)]](https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation)
 
 ```bash
-git clone 
+git clone https://github.com/ARG-autonomy/librealsense.git
 git checkout v2.53.1
 
 sudo apt-get install git libssl-dev libusb-1.0-0-dev pkg-config libgtk-3-dev -y
